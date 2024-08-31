@@ -19,13 +19,7 @@ heart_data=pd.read_csv('/content/heart.csv')
 
 heart_data.head()
 
-heart_data.info()
-
 heart_data.isnull().sum()
-
-heart_data.describe()
-
-heart_data['target'].value_counts()
 
 X=heart_data.drop(columns='target',axis=1)
  Y=heart_data['target']
